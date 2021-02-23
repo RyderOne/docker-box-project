@@ -5,9 +5,9 @@ This is a simple Dockerfile with Box project to build php application .phar
 
 Use it like this (from your application directory) :
 ```sh
-$ docker run --rm -v "$PWD":/usr/src docker-box-project box build
+$ docker run --rm -v "$PWD":/usr/src docker-box-project:3.11.1 box compile
 ```
 
-> Note that you need, according to box project documentation, a box.json (or box.json.dist) file inside your application directory
+> Note that you may need, according to box project documentation, a box.json (or box.json.dist) file inside your application directory
 
-All credits to https://github.com/box-project/box2
+All credits to https://github.com/box-project/box
